@@ -135,7 +135,9 @@ class MainActivity : AppCompatActivity(),OnClickListener {
                 if(isEqualClicked == true){
                     if(!isOperatorClicked){
                         firstOperand = text.toInt();
+                        downView.text = "$firstOperand"
                         secondOperand = 0
+                        upView.text = ""
                         isEqualClicked = false
                     }else{
                         secondOperand=text.toInt()
